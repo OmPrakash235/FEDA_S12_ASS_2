@@ -1,0 +1,20 @@
+<!-- Reduce the number 4.557693 to 2 decimal places using Number Filter. -->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<title>AngularJS Filters</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+		<script type="text/javascript">
+			var module = angular.module('myApp', []);
+			module.controller('myCtrl', function($scope, $filter){
+				$scope.num = 4.557693;
+			});
+	</script>
+	</head>
+	<body>
+		<div ng-controller="myCtrl">
+			{{num | currency : '' : 2}}
+		</div>
+	</body>
+</html>
