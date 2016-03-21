@@ -10,11 +10,11 @@
 			module.controller('myCtrl', function($scope, $filter){
 				$scope.num = 4.557693;
 			});
-	</script>
+		</script>
 	</head>
 	<body>
 		<div ng-controller="myCtrl">
-			{{num | currency : '' : 2}}
+			{{num | number : 2}}
 		</div>
 	</body>
 </html>
